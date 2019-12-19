@@ -12,10 +12,10 @@
     "author": "Thinh Ngo",
     "license": "MIT",
     "devDependencies": {
+        "@types/react": "^16.9.16",
         "typescript": "^3.7.3"
     },
     "peerDependencies": {
-        "@types/react": "^16.9.16",
         "react": "^16.12.0"
     }
 }

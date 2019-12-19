@@ -38,11 +38,13 @@ export const convertAttributesToProps = (attributes: NamedNodeMap) => {
     // convert attributes
     for (let i = 0; i < attributes.length; i++) {
         const attributeName = attributes[i].name.toLowerCase();
-        const propName = generalAttributes[attributeName] || attributeName;
-        if (booleanAttributes.has(attributeName)) {
-            props[propName] = true;
-        } else {
-            props[propName] = attributes[i].value;
+        const propName = generalAttributes[attributeName];
+        if (propName) {
+            if (booleanAttributes.has(attributeName)) {
+                props[propName] = true;
+            } else {
+                props[propName] = attributes[i].value;
+            }
         }
     }
 
