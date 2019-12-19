@@ -1,0 +1,21 @@
+{
+    "name": "react-html-deep-parser",
+    "version": "0.1.0",
+    "description": "Parse html string to React elements",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "clean": "if exist lib rmdir /s /q lib",
+        "prepare": "npm run clean && npm run build"
+    },
+    "author": "Thinh Ngo",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/react": "^16.9.16",
+        "typescript": "^3.7.3"
+    },
+    "peerDependencies": {
+        "react": "^16.12.0"
+    }
+}
